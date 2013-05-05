@@ -955,6 +955,8 @@ extern int prefer_neon_for_64bits;
 
 #define FIRST_IWMMXT_REGNUM	(LAST_HI_VFP_REGNUM + 1)
 #define LAST_IWMMXT_REGNUM	(FIRST_IWMMXT_REGNUM + 15)
+
+/* Need to sync with WCGR in iwmmxt.md.  */
 #define FIRST_IWMMXT_GR_REGNUM	(LAST_IWMMXT_REGNUM + 1)
 #define LAST_IWMMXT_GR_REGNUM	(FIRST_IWMMXT_GR_REGNUM + 3)
 
@@ -1203,7 +1205,7 @@ enum reg_class
   { 0x00000000, 0x00000000, 0x00000000, 0x00000020 }, /* VFPCC_REG */	\
   { 0x00000000, 0x00000000, 0x00000000, 0x00000040 }, /* SFP_REG */	\
   { 0x00000000, 0x00000000, 0x00000000, 0x00000080 }, /* AFP_REG */	\
-  { 0xFFFF7FFF, 0xFFFFFFFF, 0xFFFFFFFF, 0x00000000 }  /* ALL_REGS */	\
+  { 0xFFFF7FFF, 0xFFFFFFFF, 0xFFFFFFFF, 0x0000000F }  /* ALL_REGS */	\
 }
 
 /* Any of the VFP register classes.  */
