@@ -1,5 +1,5 @@
 /* Generated automatically by the program 'build/genpreds'
-   from the machine description file '/home/synergy/source/repo/toolchain/src/build/../gcc/gcc-4.8/gcc/config/arm/arm.md'.  */
+   from the machine description file '/home/synergy-local/source/toolchain/src/build/../gcc/gcc-4.8/gcc/config/arm/arm.md'.  */
 
 #ifndef GCC_TM_PREDS_H
 #define GCC_TM_PREDS_H

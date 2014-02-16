@@ -70,12 +70,12 @@
 #define _ASM_TYPE_FUNCTION	#function
 #define _ASM_TYPE_OBJECT	#object
 #define _ENTRY(x) \
-	.text; _ALIGN_TEXT; .globl x; .type x,_ASM_TYPE_FUNCTION; x: .fnstart; .cfi_startproc;
+	.text; _ALIGN_TEXT; .globl x; .type x,_ASM_TYPE_FUNCTION; x: .fnstart
 
 #define _ASM_SIZE(x)	.size x, .-x;
 
 #define _END(x) \
-	.fnend; .cfi_endproc; \
+	.fnend; \
 	_ASM_SIZE(x)
 
 #ifdef GPROF
